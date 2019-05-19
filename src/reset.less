@@ -1,0 +1,154 @@
+/**
+ * powered by 波比小金刚 at 2018-05-07 13:47:07 
+ * last modified by 波比小金刚 at 2018-05-07 13:47:07 
+ * @Description: 重置样式文件
+*/
+
+//* 全局样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 微软雅黑 !important;
+  //min-width: 1280px;
+}
+
+#root{
+  height: 100%;
+}
+
+.ant-layout-has-sider{
+  min-width: 1280px;
+}
+
+::-webkit-scrollbar {  
+  width: 14px;  
+  height: 14px;  
+}  
+  
+::-webkit-scrollbar-track,  
+::-webkit-scrollbar-thumb {  
+  border-radius: 999px;  
+  border: 5px solid transparent;  
+}  
+  
+::-webkit-scrollbar-track {  
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2) inset;  
+}  
+  
+::-webkit-scrollbar-thumb {  
+  min-height: 20px;  
+  background-clip: content-box;  
+  box-shadow: 0 0 0 5px rgba(0,0,0,.2) inset;  
+}  
+  
+::-webkit-scrollbar-corner {  
+  background: transparent;  
+}
+
+.ant-table-tbody > tr:hover > td{
+  background:#f5f8fa !important;
+}
+
+.ant-modal-mask{
+  background-color:rgba(0, 0, 0, 0.7) !important;
+}
+
+.ant-menu-item{
+  line-height: 46px;
+  height: 46px;
+}
+
+.ant-layout-header{
+  line-height: 60px !important;
+  height: 60px !important;
+}
+
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td{
+  padding:16px 6px;
+  text-align: center !important;
+}
+
+.ant-menu-item　> span{
+  position: relative;
+  left:-13px;
+}
+
+.ant-menu-item > span > a > span > span{
+  color:#435966;
+}
+
+.ant-menu-item:hover > span > a > span > span{
+  color:#2dc3e8;
+}
+
+.ant-menu-item-selected > span > a > span > span{
+  color:#2dc3e8;
+}
+
+.ant-select-selection{
+  background-color: transparent !important;
+}
+
+.ant-calendar-picker-input{
+  background-color: transparent !important;
+}
+
+.ant-menu-item-selected{
+  background-color: #ffffff !important;
+  color: #435966 !important;
+}
+
+.ant-select-dropdown-menu-item-selected{
+  background-color: #f5f8fa !important;
+}
+
+.ant-select-dropdown-menu-item-active{
+  background-color: #f5f8fa !important;
+}
+
+.ant-calendar-picker-container{
+  z-index: 10001;
+}
+
+.ht-search-box{
+  .ant-input{
+    border: 1px solid #fff !important;
+  }
+}
+
+.empty-inner{
+  .ant-modal-body{
+    padding:16px;
+  }
+}
+
+.ant-btn{
+  border-radius:2px !important;
+}
+
+.ant-select-selection{
+  border-radius: 2px !important;
+}
+
+.ant-tooltip-inner{
+  background-color: #fff !important;
+  span{
+    color: #435966 !important;
+  }
+}
+
+.ant-tooltip-content{
+  position: relative;
+  left:-7px;
+  .ant-tooltip-arrow{
+    display: none;
+  }
+}
+
+.filter-part>div:nth-child(1){
+  margin-right: 15px;
+}

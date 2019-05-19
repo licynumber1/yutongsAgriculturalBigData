@@ -1,0 +1,101 @@
+/**
+ * powered by 波比小金刚 at 2018-05-07 15:58:07 
+ * last modified by 波比小金刚 at 2018-05-07 15:58:07 
+ * @Description: 侧边栏组件样式 
+*/
+@import '~antd/lib/style/themes/default.less';
+@ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+
+// logo
+.logo {
+  height: 60px;
+  position: relative;
+  line-height: 60px;
+  padding-left: (@menu-collapsed-width - 32px) / 2;
+  transition: all 0.3s;
+  overflow: hidden;
+  border-right:1px solid #ebeff2;
+  border-bottom:1px solid #ebeff2;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    height: 32px;
+  }
+  h1 {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: 0 0 0 12px;
+    font-family: 'Myriad Pro', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+}
+
+// sider
+.sider {
+  
+}
+
+// icon
+.icon {
+  width: 14px;
+  margin-right: 10px;
+}
+
+// override antd font style
+// .ant-menu-item {
+//   & span {
+//     font-size: 16px;
+//   }
+// }
+
+
+// hidden the default arrow
+.ant-menu-submenu-arrow {
+  display: none;
+}
+
+// override sider add button
+.ht-sider-add-new {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+// when the sider folded, let the add button hidden
+.ant-menu-inline-collapsed > .ant-menu-submenu > .ant-menu-submenu-title span + .ht-sider-add-new {
+  max-width: 0;
+  display: inline-block;
+  opacity: 0;
+}
+
+// add new board operation panel
+.ht-new-board {
+  z-index: 10000;
+  position: relative;
+  width: 274px;
+  height: 146px;
+  background-color: #ffffff;
+}
+
+// new board component wapper
+.new-board-component-warpper {
+  padding: 12px 12px;
+  & > h1 {
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+  & > div {
+    margin-top: 18px;
+  }
+  & > div button {
+    width: 110px;
+  }
+  & > div button:first-child {
+    margin-right: 14px;
+  }
+}

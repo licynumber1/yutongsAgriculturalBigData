@@ -1,0 +1,75 @@
+/**
+ * powered by 波比小金刚 at 2018-05-25 11:02:02 
+ * last modified by 波比小金刚 at 2018-05-25 11:02:02 
+ * @Description: table 样式文件 
+*/
+@headerHeight: 45px;
+@borderTopColor: #f2f2f2;
+@borderBottomColor: #e2e2e2;
+@paddingSize: 5px;
+
+//? default font style
+.font-style {
+  font-size: 14px;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: 0px;
+	color: #000000;
+}
+
+ul {
+  margin: 0;
+}
+
+/** 简单 table **/
+.ht-simple-table-wrapper {
+  padding: @paddingSize;
+  height: 100%;
+  .ht-simple-table-head {
+    list-style: none;
+    height: @headerHeight;
+    border-top: 1px solid @borderTopColor;
+    border-bottom: 1px solid @borderBottomColor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 12px;
+    li {
+      display: inline-block;
+      .font-style;
+    }
+  }
+  .ht-simple-table-body {
+    overflow-y: auto;
+    height: calc(~"100% - 50px");
+    padding: 0 12px;
+    .ht-simple-table-items {
+      height: @headerHeight;
+      border-bottom: 1px solid @borderTopColor;
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      li {
+        display: inline-block;
+        .font-style;
+        align-self: center;
+      }
+    }
+  }
+  .ht-vertical-table-body {
+    overflow-y: auto;
+    padding: 0 12px;
+    height: calc(~"100% - 50px");
+    ul {
+      display: inline-block;
+      height: 100%;
+      list-style-type: none;
+      li {
+        height: @headerHeight;
+        .font-style;
+        line-height: @headerHeight;
+        border-bottom: 1px solid @borderTopColor;
+      }
+    }
+  }
+}
